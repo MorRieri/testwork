@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/styles.css">
+	<title>Mainpage</title>
+</head>
+
+<body>
+	<div class="popup" id="popUp">
+		<form action="#" class="popup__form">
+		<span class="popup__close">&times;</span>
+		<h2 class="popup__title">Заказать на пробу</h2>
+		<p class="popup__text">
+		 Оставьте Ваши контакты, и мы свяжемся с Вами, чтобы ответить на все вопросы и обсудить условия доставки
+		</p>
+		<h3 class="popup__title">Введите имя</h3>
+		<input type="text" placeholder="Имя" class="popup__input">
+		<h3 class="popup__title">Введите телефон</h3>
+		<input type="text" placeholder="+7 (888) 888-88-88" class="popup__input">
+		<h3 class="popup__title">Введите email</h3>
+		<input type="text" placeholder="mail@email.ru" class="popup__input">
+		<button class="popup__button">Заказать звонок</button>
+		</form>
+		</div>
+	<header>
+		<section class="header container">
+			<ul class="header__list">
+				<li class="header__item">Будни |</li>
+				<li class="header__item">8:00&mdash;20:00</li>
+				<li class="header__item">Выходные |</li>
+				<li class="header__item">9:00&mdash;16:00</li>
+				<li class="header__item">Онлайн-заказ |</li>
+				<li class="header__item">Круглосуточно</li>
+			</ul>
+			<form action="#" class="header__form">
+				<h2 class="header__form-heading">Я ищу, например</h2>
+				<input class="header__form-input" type="text" placeholder="Вода 19 литров">
+				<button class="header__form-submit" type="submit"><img src="images/icon-search.svg" alt=""></button>
+			</form>
+		</section>
+
+
+		<section class="nav container">
+			<div class="nav__title-box">
+				<img src="images/nav-logo.svg" alt="" class="nav__logo" height="38">
+				<h2 class="nav__title">Город вод</h2>
+			</div>
+			<div class="nav__links">
+				<a href="#" class="nav__link">Доставка</a>
+				<a href="#" class="nav__link">Услуги</a>
+				<a href="#" class="nav__link">Акции</a>
+				<a href="#" class="nav__link">Контакты</a>
+			</div>
+			<div class="nav__phone">
+				<h3 class="nav__phone-title">+7 495 923 33 93</h3>
+					<button class="nav__phone-button ordercall js-callback">Заказать звонок</button>
+			</div>
+			<div class="nav__buttons">
+				<button class="nav__button ordernow js-ordernow" id="js-ordernow">Заказать воду на пробу</button>
+				<button class="nav__busket">Корзина</button>
+			</div>
+		</section>
+	</header>
+	<main>
+		<section class="services container">
+			<h3 class="services__heading heading_hidden"></h3>
+			<ul class="services__list">
+				<li class="services__item">Вода</li>
+				<li class="services__item">Оборудование</li>
+				<li class="services__item">Кофе, чай</li>
+				<li class="services__item">Сопутствующие</li>
+				<li class="services__item">Продукты</li>
+			</ul>
+		</section>
+
+
+		<section class="products container">
+			<div class="products__slider slider">
+				<div class="slider__wrapper">
+					<div class="slider__item">
+						<img src="images/slider-image_830x601.svg" alt="">
+					</div>
+					<div class="slider__item">
+						<img src="images/slider-image_830x601.svg" alt="">
+					</div>
+					<div class="slider__item">
+						<img src="images/slider-image_830x601.svg" alt="">
+					</div>      
+					<div class="slider__item">
+						<img src="images/slider-image_830x601.svg" alt="">
+					</div>
+				</div>
+				 <a class="slider__control slider__control_left" href="#" role="button">
+				 </a>
+				 <a class="slider__control slider__control_right slider__control_show" href="#" role="button">
+				 </a>
+			</div>
+
+			<div class="products__cards cards">
+				<div class="card">
+					<div class="card__box-text">
+						<h3 class="card__title">Доставка воды на дом</h3>
+							<p class="card__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra malesuada sit nec vel nec. Et aliquet placerat pulvinar vitae auctor. Risus lacus, id</p>
+							<button class="card__button button">+ Добавить</button>
+					</div>
+					<div class="card__box-image">
+						<img src="images/card-image.svg" alt="" class="card__image">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__box-text">
+						<h3 class="card__title">Доставка воды на дом</h3>
+						<p class="card__text  text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra malesuada sit nec vel nec. Et aliquet placerat pulvinar vitae auctor. Risus lacus, id</p>
+						<button class="card__button button">+ Добавить</button>
+					</div>
+					<div class="card__box-image">
+						<img src="images/card-image.svg" alt="" class="card__image">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__box-text">
+						<h3 class="card__title">Доставка воды на дом</h3>
+						<p class="card__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra malesuada sit nec vel nec. Et aliquet placerat pulvinar vitae auctor. Risus lacus, id</p>
+						<button class="card__button button">+ Добавить</button>
+					</div>
+					<div class="card__box-image">
+						<img src="images/card-image.svg" alt="" class="card__image">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+<script type="text/javascript">
+		// Get the modal
+		var modal = document.getElementById("popUp");
+		
+		// Get the button that opens the modal
+		var btn = document.getElementById("js-ordernow");
+		
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("popup__close")[0];
+		
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+		
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+</script>
+<script type="text/javascript">
+    'use strict';
+    var multiItemSlider = (function () {
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = []; // массив элементов
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var position = {
+          getMin: 0,
+          getMax: _items.length - 1,
+        }
+
+        var _transformItem = function (direction) {
+          if (direction === 'right') {
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+              return;
+            }
+            if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+              _sliderControlLeft.classList.add('slider__control_show');
+            }
+            if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+              _sliderControlRight.classList.remove('slider__control_show');
+            }
+            _positionLeftItem++;
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            if (_positionLeftItem <= position.getMin) {
+              return;
+            }
+            if (!_sliderControlRight.classList.contains('slider__control_show')) {
+              _sliderControlRight.classList.add('slider__control_show');
+            }
+            if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+              _sliderControlLeft.classList.remove('slider__control_show');
+            }
+            _positionLeftItem--;
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+          }
+        };
+
+        var _setUpListeners = function () {
+          // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+          _sliderControls.forEach(function (item) {
+            item.addEventListener('click', _controlClick);
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.slider')
+  </script>
+
+</body>
+
+</html>
